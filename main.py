@@ -131,6 +131,7 @@ def computer_move():
     if game_over:
         return
 
+    pygame.time.delay(500)
     if smart_mode and last_hit:
         row, col = last_hit
         for dr, dc in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
